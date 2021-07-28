@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://knowrob.org/kb/iai-student-map.owl#"
+         xml:base="http://knowrob.org/kb/iai-student-map.owl"
+         xmlns:srdl2="http://knowrob.org/kb/srdl2.owl#"
+         xmlns:srdl2-cap="http://knowrob.org/kb/srdl2-cap.owl#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:urdf="http://knowrob.org/kb/urdf.owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:qudt-unit="http://qudt.org/vocab/unit#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:soma="http://www.ease-crc.org/ont/SOMA.owl#"
+         xmlns:xml="http://www.w3.org/XML/1998/namespace"
+         xmlns:srdl2-comp="http://knowrob.org/kb/srdl2-comp.owl#"
+         xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
+         xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#">
+
+    <!-- =========================================== -->
+    <!-- |   Ontology Imports                      | -->
+    <!-- =========================================== -->
+
+    <owl:Ontology rdf:about="http://knowrob.org/kb/iai_student_map.owl">
+        <owl:imports rdf:resource="http://www.ease-crc.org/ont/SOMA.owl"/>
+    </owl:Ontology>
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject -->
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai_student_map.owl#iai_student_map_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floor</urdf:hasBaseLinkName>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/iai_student_map.owl#table1_1"/>
+        <dul:hasComponent rdf:resource="http://knowrob.org/kb/iai_student_map.owl#box_1"/>
+        <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table1</urdf:hasEndLinkName>
+         <urdf:hasEndLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">box</urdf:hasEndLinkName>
+    </owl:NamedIndividual>
+
+     <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai_student_robot.owl#table1_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">table1</urdf:hasBaseLinkName>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai_student_robot.owl#box_1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject"/>
+        <urdf:hasBaseLinkName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">box</urdf:hasBaseLinkName>
+    </owl:NamedIndividual>
+
+ 	<!-- Individuals for kinematics information -->
+	<owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai_student_robot.owl#InformationObject_KFLDFGHj">
+        <rdf:type rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#KinoDynamicData"/>
+        <dul:isAbout rdf:resource="http://knowrob.org/kb/iai_student_map.owl#map_1"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://knowrob.org/kb/iai_student_robot.owl#InformationRealization_1RTUPDFG">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DigitalResource"/>
+        <dul:realizes rdf:resource="http://knowrob.org/kb/iai_student_robot.owl#InformationObject_KFLDFGHj"/>
+        <soma:hasPersistentIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iai_student_map</soma:hasPersistentIdentifier>
+        <soma:hasDataFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URDF</soma:hasDataFormat>
+    </owl:NamedIndividual>
+</rdf:RDF>
+ 

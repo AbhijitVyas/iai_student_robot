@@ -1,0 +1,43 @@
+[
+  {
+    "s": "http://www.ease-crc.org/ont/SOMA.owl#Episode_5NW5RH0T",
+    "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "o": "http://www.ease-crc.org/ont/SOMA.owl#Episode"
+  },
+  {
+    "s": "http://www.ease-crc.org/ont/SOMA.owl#Episode_5NW5RH0T",
+    "p": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor",
+    "o": "http://www.ease-crc.org/ont/SOMA.owl#ArtificialAgent_CTYBCZBF"
+  },
+  {
+    "s": "http://www.ease-crc.org/ont/SOMA.owl#Episode_5NW5RH0T",
+    "p": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#includesAction",
+    "o": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action_WOC9WF3D"
+  },
+  {
+    "s": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action_WOC9WF3D",
+    "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "o": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"
+  },
+  {
+    "s": "http://www.ease-crc.org/ont/SOMA.owl#Blank_Task_8WA1OTA8",
+    "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "o": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"
+  },
+  {
+    "s": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action_WOC9WF3D",
+    "p": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#executesTask",
+    "o": "http://www.ease-crc.org/ont/SOMA.owl#Blank_Task_8WA1OTA8"
+  },
+  {
+    "s": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action_WOC9WF3D",
+    "p": "http://www.ease-crc.org/ont/SOMA.owl#isPerformedBy",
+    "o": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ArtificialAgent_CTYBCZBF"
+  },
+  {
+    "s": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#ArtificialAgent_CTYBCZBF",
+    "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "o": "http://www.ease-crc.org/ont/SOMA.owl#ArtificialAgent"
+  }
+    
+]
